@@ -1,0 +1,34 @@
+button, .btn
+    width: 230px
+    text-align: center
+    font-size: 21px
+    text-decoration: none
+    display: inline-block
+    border-radius: 5px
+    border: 2px solid #fff
+    transition: .15s
+    background-color: #fff
+    color: $accentColor
+    padding: 10px 15px
+    font-weight: 500
+    &:hover
+        background-color: transparentize(#fff, .1)
+        color: $accentColor
+        cursor: pointer
+    &.primary
+        color: #ffffff
+        background-color: $accentColor
+    &.btn-with-icon
+        display: flex
+        justify-content: space-between
+        align-items: center
+        img
+            display: inline-block
+            width: 20px
+    &.btn-white
+        color: #ffffff
+        background-color: transparent
+        border-color: #ffffff
+        &:hover
+            background-color: transparentize(#fff, .95)
+    

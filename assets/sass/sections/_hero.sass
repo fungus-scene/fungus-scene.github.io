@@ -1,0 +1,56 @@
+.hero
+    height: 70vh
+    min-height: 655px
+    // background-color: $accentColor
+    background: rgb(108,92,231)
+    background: -moz-linear-gradient(0deg, rgba(108,92,231,1) 0%, rgba(75,64,164,1) 100%)
+    background: -webkit-linear-gradient(0deg, rgba(108,92,231,1) 0%, rgba(75,64,164,1) 100%)
+    background: linear-gradient(0deg, rgba(108,92,231,1) 0%, rgba(75,64,164,1) 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6c5ce7",endColorstr="#4b40a4",GradientType=1)
+    color: white
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    padding-bottom: 20vh
+    position: relative
+    width: 100vw
+    margin-bottom: 260px
+    &:after
+        content: ''
+        position: absolute
+        top: 100%
+        left: 0
+        height: 0
+        width: 0
+        border-right: 100vw solid $accentColor
+        border-bottom: 10vw solid transparent
+        border-top: 0px solid transparent
+        overflow: hidden
+    h1
+        font-size: 5vw
+        margin: 0
+    p
+        font-size: 1.7vw
+        width: 50%
+        max-width: 100%
+        text-align: center
+        margin-bottom: 40px
+    > img.screenshot
+        width: 850px
+        position: absolute
+        bottom: -250px
+        left: 50%
+        transform: translateX(-50%)
+        z-index: 2
+        border-radius: 5px
+        // box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+        // box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+        // box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)
+        // box-shadow: 0 5px 40px rgba(0, 0, 0, 0.16)
+    .button-wrapper
+        display: flex
+        .btn
+            margin: 0 5px
+        
