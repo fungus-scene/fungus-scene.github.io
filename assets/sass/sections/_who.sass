@@ -15,11 +15,18 @@
         margin: auto
         li
             text-align: center
+            &:first-of-type
+                img
+                    border: 3px solid $accentColor
+                    transition: .15s
+                    &:hover
+                        transform: scale(1.05)
+
             img
                 width: 150px
                 border-radius: 50%
                 box-shadow: 0 5px 40px rgba(0, 0, 0, 0.16)
-                border: 3px solid $accentColor
+                // border: 3px solid transparent
             h3
                 font-size: 22px
                 font-weight: 600
