@@ -1,3 +1,9 @@
+# Force HTTPS
+# RewriteEngine On 
+# RewriteCond     %{SERVER_PORT} ^80$
+# RewriteRule     ^(.*)$ https://%{SERVER_NAME}%{REQUEST_URI} [L,R]
+
+
 # BEGIN GZIP
 <ifmodule mod_deflate.c>
 AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript image/svg+xml svg svgz

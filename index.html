@@ -9,6 +9,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <meta
+            name="Description"
+            content="Interactive 3D experience to better understand the morphology of a wide range of types of fungi (Kindom Mycota)."
+        />
+        <meta
+            name="keywords"
+            content="educational,plant protection,plant,protection,3d,fungi,fungus,interactive,learning,learn,three.js,js,javascript,blender,models,obj"
+        />
+        <meta
             property="og:title"
             content="Fungus Scene | Interactive 3D fungi"
         />
@@ -22,6 +30,18 @@
             content="./assets/images/social-media-thump.png"
         />
         <meta property="og:url" content="https://fungus-scene.github.io" />
+        <meta name="theme-color" content="#6c5ce7" />
+        <!-- icon in the highest resolution we need it for -->
+        <link rel="icon" sizes="192x192" href="./assets/images/logo.png" />
+
+        <!-- reuse same icon for Safari -->
+        <link rel="apple-touch-icon" href="./assets/images/logo.png" />
+
+        <!-- multiple icons for IE -->
+        <meta
+            name="msapplication-square310x310logo"
+            content="./assets/images/logo.png"
+        />
 
         <title>Fungus Scene | Interactive 3D fungi</title>
         <link
@@ -31,7 +51,7 @@
         />
         <link rel="stylesheet" href="./assets/css/style.css?v=1.0.0" />
 
-        <!-- <link rel=manifest href=/manifest.json> -->
+        <link rel=manifest href=/manifest.json>
         <script>
             // Support Service Workers
             if (
@@ -39,9 +59,9 @@
                 !location.hostname !== 'localhost' &&
                 !location.hostname !== '127.0.0.1'
             ) {
-                // window.addEventListener('load', function(e) {
-                //     navigator.serviceWorker.register('sw.js');
-                // });
+                window.addEventListener('load', function(e) {
+                    navigator.serviceWorker.register('sw.js');
+                });
             }
         </script>
     </head>
@@ -65,6 +85,7 @@
                 <a
                     href="https://github.com/eslam-nasser/eslam-nasser.github.io/releases/download/v0.9.1/Fungus.Scene.Setup.0.9.0.exe"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="btn btn-with-icon"
                 >
                     Download
@@ -76,6 +97,7 @@
                 <a
                     href="https://eslam-nasser.github.io/"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="btn btn-white btn-with-icon"
                 >
                     Online demo
@@ -131,6 +153,7 @@
                             <a
                                 href="https://github.com/eslam-nasser/eslam-nasser.github.io"
                                 target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 the code base </a
                             >.
@@ -147,13 +170,18 @@
                 <h1>Who?</h1>
                 <ul>
                     <li>
-                        <a href="https://www.eslamnasser.com/" target="_blank">
+                        <a
+                            href="https://www.eslamnasser.com/"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                        >
                             <img src="./assets/images/eslam.jpg" alt="Eslam" />
                         </a>
                         <h3>
                             <a
                                 href="https://www.eslamnasser.com/"
                                 target="_blank"
+                                rel="noopener noreferrer"
                                 >Eslam nasser
                             </a>
                         </h3>
@@ -165,7 +193,7 @@
                         <img src="./assets/images/female.jpg" alt="Female" />
                         <h3>Nada.M</h3>
                         <p>
-                            Blender Designer
+                            Blender Designer/Research
                         </p>
                     </li>
                     <li>
@@ -179,14 +207,14 @@
                         <img src="./assets/images/female.jpg" alt="Female" />
                         <h3>Yasmine.B</h3>
                         <p>
-                            Blender Designer
+                            Research
                         </p>
                     </li>
                     <li>
                         <img src="./assets/images/female.jpg" alt="Female" />
                         <h3>Nada.I</h3>
                         <p>
-                            Blender Designer
+                            Research
                         </p>
                     </li>
                 </ul>
